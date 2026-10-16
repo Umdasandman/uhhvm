@@ -9,8 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
-  :root { --bg:#1a1410; --surface:#221b14; --surface2:#2a2118; --line:#3b2f22;
-    --gold:#f5c518; --gold-deep:#d4a017; --text:#f2ede4; --muted:#b3a48f; --dim:#7d7263; }
+  :root { --bg:#f4efe6; --surface:#fffdf8; --surface2:#ece4d2; --line:#d9cfb8;
+    --gold:#f5c518; --gold-deep:#8a6d1c; --text:#2a2118; --muted:#6b5f4c; --dim:#8a7d68; }
   html { scroll-behavior:smooth; }
   body { background:var(--bg); color:var(--text); font-family:'Inter',Arial,Helvetica,sans-serif;
     -webkit-font-smoothing:antialiased; position:relative; }
@@ -22,17 +22,17 @@
     -webkit-mask-image:radial-gradient(circle,#000 60%,transparent 71%);
     mask-image:radial-gradient(circle,#000 60%,transparent 71%); }
   .wrap { max-width:1100px; margin:0 auto; padding:0 28px; position:relative; z-index:1; }
-  nav { position:sticky; top:0; z-index:50; background:rgba(26,20,16,.90);
+  nav { position:sticky; top:0; z-index:50; background:rgba(244,239,230,.93);
     backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px);
     border-bottom:1px solid var(--line); }
   .nav-inner { max-width:1100px; margin:0 auto; padding:0 28px; height:62px;
     display:flex; align-items:center; justify-content:space-between; }
   .wordmark { font-family:'Anton',Impact,sans-serif; font-size:22px; letter-spacing:3px;
-    color:var(--gold); text-decoration:none; }
+    color:var(--gold-deep); text-decoration:none; }
   .nav-links { display:flex; gap:26px; }
   .nav-links a { color:var(--muted); text-decoration:none; font-size:12px; font-weight:600;
     text-transform:uppercase; letter-spacing:2px; transition:color .2s; }
-  .nav-links a:hover { color:var(--gold); }
+  .nav-links a:hover { color:var(--gold-deep); }
   @media (max-width:760px){ .nav-links{ display:none; } }
   section.block { padding:72px 0 8px; }
   .sec-head { display:flex; align-items:baseline; gap:16px; margin-bottom:34px;
@@ -47,7 +47,7 @@
 
   .page-head { text-align:center; padding:70px 24px 30px; position:relative; z-index:1; }
   .page-head h1 { font-family:'Anton',Impact,sans-serif; font-size:clamp(36px,6vw,64px);
-    letter-spacing:3px; color:var(--gold); }
+    letter-spacing:3px; color:var(--gold-deep); }
   .page-head .sub { color:var(--muted); margin-top:10px; font-size:14px; letter-spacing:2px;
     text-transform:uppercase; }
   .filters { display:flex; justify-content:center; gap:10px; flex-wrap:wrap;
