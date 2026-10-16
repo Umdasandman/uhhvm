@@ -127,6 +127,17 @@
   .plaque li { font-size:14.5px; color:#d8d0bf; padding:7px 0; border-bottom:1px solid rgba(255,255,255,.08); }
   .plaque li:last-child { border-bottom:none; }
   .plaque li em { color:var(--text); font-style:normal; font-weight:600; }
+  .web-links { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:18px; }
+  .web-link { background:var(--surface); border:1px solid var(--line); border-radius:14px;
+    padding:26px 24px; transition:transform .25s, box-shadow .25s, border-color .25s; }
+  .web-link:hover { transform:translateY(-3px); border-color:var(--gold-deep);
+    box-shadow:0 14px 32px rgba(0,0,0,.18); }
+  .web-link h3 { font-size:18px; margin-bottom:10px; }
+  .web-link h3 a { color:var(--gold-deep); text-decoration:none; }
+  .web-link h3 a:hover { text-decoration:underline; }
+  .web-link p { font-size:14.5px; color:#4a3d2e; line-height:1.7; }
+  .web-link .src { display:block; margin-top:10px; font-size:11px; font-weight:700;
+    text-transform:uppercase; letter-spacing:2px; color:var(--muted); }
   .cta { text-align:center; padding:90px 24px 40px; position:relative; z-index:1; }
   .cta h2 { font-family:'Anton',Impact,sans-serif; font-size:clamp(30px,5vw,48px);
     letter-spacing:2px; color:var(--gold-deep); margin-bottom:14px; }
@@ -153,7 +164,7 @@
   <a class="wordmark" href="#">U.H.H.V.M.</a>
   <div class="nav-links">
     <a href="#story">Story</a><a href="#mic">On the Mic</a><a href="#camera">Behind the Camera</a>
-    <a href="#recognition">Recognition</a><a href="gallery.html">Photo Archive</a>
+    <a href="#recognition">Recognition</a><a href="#elsewhere">Elsewhere</a><a href="gallery.html">Photo Archive</a>
   </div>
 </div></nav>
 
@@ -220,6 +231,12 @@
       <div class="plaque gold-plq"><h3>GOLD</h3><ul><li>Wu-Tang Clan <em>Enter the Wu-Tang (36 Chambers)</em></li><li>Luniz <em>Operation Stackola</em></li><li>Trina <em>Da Baddest Bitch</em></li><li>Trick Daddy <em>Book of Thugs</em></li><li>Do or Die <em>Heads or Tails</em></li></ul></div>
       <div class="plaque plat-plq"><h3>PLATINUM</h3><ul><li>Scarface <em>The Diary</em></li><li>Scarface <em>My Homies</em></li><li>K-Ci &amp</li><li>JoJo <em>Love Always</em></li><li>Westside Connection <em>Bow Down</em></li></ul></div>
     </div>
+  </section>
+
+  <section class="block" id="elsewhere">
+    <div class="sec-head"><span class="sec-num">08</span><span class="sec-title">Elsewhere on the Web</span></div>
+    <div class="story"><p>The show's footprint beyond this page.</p></div>
+    <div class="web-links"><div class="web-link"><h3><a href="https://blakksteel.com/gallery/" target="_blank" rel="noopener">Blakk Steel's photo gallery</a></h3><p>The anchorman's own archive of the show's shoots — Jay-Z's '96 <em>Reasonable Doubt</em> promo, Method Man &amp; Redman '94, Lost Boyz interviews, RZA, and a deep '93 show shoot.</p><span class="src">blakksteel.com</span></div><div class="web-link"><h3><a href="https://www.youtube.com/playlist?list=PL2--NrT-NkDYd68Mkc_OIL1yJZFyId2MT" target="_blank" rel="noopener">The Kalaj Dame Podcast, Ep. 17</a></h3><p><em>Mr Money Well Spent &mdash; Protect the Guilty</em>: a three-hour conversation with Blakk Steel on UHHVM and Pittsburgh hip-hop history.</p><span class="src">YouTube</span></div><div class="web-link"><h3><a href="https://americanarchive.org/catalog/cpb-aacip-120-05s7h7g7" target="_blank" rel="noopener">American Archive of Public Broadcasting</a></h3><p>Adam Smith's segment on WQED's <em>OnQ</em>, preserved in the national public broadcasting archive.</p><span class="src">americanarchive.org</span></div><div class="web-link"><h3><a href="https://www.youtube.com/watch?v=Mn00qpwfpTg" target="_blank" rel="noopener">&ldquo;Nonconceptual&rdquo; &mdash; rare clip</a></h3><p>DJ BlakkSteel, Hard Nizzy and Last Man &mdash; the weekly hosts, directed and edited by The Sandman.</p><span class="src">YouTube</span></div></div>
   </section>
 </div>
 
